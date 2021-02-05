@@ -39,8 +39,7 @@
 <body>
     @include('partials\titre')
     @yield('content')
-    {{-- @include('partials.footer') --}}
-    @include('"partials.footer"')
+    @include('partials.footer')
 
 
     <script src="{{asset('vendor/jquery/jquery.min.js')}}"></script>
