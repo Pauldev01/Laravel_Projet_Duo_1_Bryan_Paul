@@ -5,10 +5,11 @@
         <!-- ======= Contact Section ======= -->
         <section id="contact" class="contact section-bg">
             <div class="container">
-      
+              @foreach ($contactDB as $element)
+                  
               <div class="section-title">
-                <h2>Contact</h2>
-                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                <h2>{{$element->title}}</h2>
+                <p>{{$element->paragraph}}</p>
               </div>
       
               <div class="row">
@@ -18,23 +19,23 @@
                   <div class="row">
                     <div class="col-md-12">
                       <div class="info-box">
-                        <i class="bx bx-map"></i>
-                        <h3>Our Address</h3>
-                        <p>A108 Adam Street, New York, NY 535022</p>
+                        <i class="{{$element->iconeAddress}}"></i>
+                        <h3>{{$element->titleAddress}}</h3>
+                        <p>{{$element->address}}</p>
                       </div>
                     </div>
                     <div class="col-md-6">
                       <div class="info-box mt-4">
-                        <i class="bx bx-envelope"></i>
-                        <h3>Email Us</h3>
-                        <p>info@example.com<br>contact@example.com</p>
+                        <i class="{{$element->iconeMail}}"></i>
+                        <h3>{{$element->titleMail}}</h3>
+                        <p>{{$element->mail1}}<br>{{$element->mail2}}</p>
                       </div>
                     </div>
                     <div class="col-md-6">
                       <div class="info-box mt-4">
-                        <i class="bx bx-phone-call"></i>
-                        <h3>Call Us</h3>
-                        <p>+1 5589 55488 55<br>+1 6678 254445 41</p>
+                        <i class="{{$element->iconePhone}}"></i>
+                        <h3>{{$element->titlePhone}}</h3>
+                        <p>{{$element->number1}}<br>{{$element->number2}}</p>
                       </div>
                     </div>
                   </div>
@@ -62,16 +63,17 @@
                       <div class="validate"></div>
                     </div>
                     <div class="mb-3">
-                      <div class="loading">Loading</div>
+                      <div class="loading">{{$element->loading}}</div>
                       <div class="error-message"></div>
-                      <div class="sent-message">Your message has been sent. Thank you!</div>
+                      <div class="sent-message">{{$element->success}}</div>
                     </div>
-                    <div class="text-center"><button type="submit">Send Message</button></div>
+                    <div class="text-center"><button type="submit">{{$element->btnContact}}</button></div>
                   </form>
                 </div>
       
               </div>
-      
+
+              @endforeach
             </div>
           </section><!-- End Contact Section -->
           
