@@ -37,7 +37,7 @@
         ======================================================== -->
       </head>
 <body>
-    @include('partials\titre')
+    @include('partials.titre')
     @yield('content')
     @include('partials.footer')
 

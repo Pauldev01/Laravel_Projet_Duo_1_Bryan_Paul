@@ -17,4 +17,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/',[WelcomeController::class,'index']) -> name('Welcome');
 Route::get('/article',[ArticleController::class,'index']) -> name('Article');
-Route::get('/contact',[ArticleController::class,'index']) -> name('Contact');
+Route::get('/contact',[ContactController::class,'index']) -> name('Contact');
