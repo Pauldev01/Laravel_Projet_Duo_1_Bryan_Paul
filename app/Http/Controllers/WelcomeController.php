@@ -5,16 +5,17 @@ namespace App\Http\Controllers;
 // use App\Models\Navbar;
 
 use App\Models\Footer;
+use App\Models\Navbar;
 use App\Models\Network;
 use Illuminate\Http\Request;
 
 class WelcomeController extends Controller
 {
     public function index(){
-        // $navbardb = Navbar::all();
+        $navbardb = Navbar::all();
         $footerDB = Footer::all();
         $networksDB = Network::all();
-        return view('welcome', compact("footerDB", "networksDB"));
+        return view('welcome', compact("navbardb","footerDB", "networksDB"));
     }
 
     public function boFooter(){

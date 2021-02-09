@@ -21,7 +21,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/',[WelcomeController::class,'index']) -> name('Welcome');
-Route::get("/contact", [ContactController::class, "index"]);
+Route::get("/contact", [ContactController::class, "index"]) -> name('Contact');
 Route::get('/article',[ArticleController::class,'index']) -> name('Article');
 
 Route::get("/backoffice", function () {

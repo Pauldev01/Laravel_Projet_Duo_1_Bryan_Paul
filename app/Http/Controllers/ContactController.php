@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Contact;
 use App\Models\Footer;
 use App\Models\Informations;
+use App\Models\Navbar;
 use App\Models\Network;
 use Illuminate\Http\Request;
 
@@ -15,7 +16,8 @@ class ContactController extends Controller
         $footerDB = Footer::all();
         $informationsDB = Informations::all();
         $networksDB = Network::all();
-        return view("pages.contact", compact("contactDB", "footerDB", "informationsDB", "networksDB"));
+        $navbardb = Navbar::all();
+        return view("pages.contact", compact("navbardb","contactDB", "footerDB", "informationsDB", "networksDB"));
     }
 
     public function boContact(){

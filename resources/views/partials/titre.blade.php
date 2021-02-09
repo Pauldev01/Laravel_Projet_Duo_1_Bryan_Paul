@@ -1,4 +1,4 @@
-{{-- <!-- ======= Header ======= -->
+<!-- ======= Header ======= -->
 <header id="header" class=" ">
   @foreach ($navbardb as $item)
   <div class="container d-flex align-items-center justify-content-between">
@@ -17,4 +17,4 @@
       </nav><!-- .nav-menu -->
     </div>
     @endforeach
-  </header><!-- End Header --> --}}
+  </header><!-- End Header -->
