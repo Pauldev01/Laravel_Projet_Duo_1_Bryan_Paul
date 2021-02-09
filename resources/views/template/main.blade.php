@@ -9,11 +9,11 @@
         <meta content="" name="keywords">
       
         <!-- Favicons -->
-        <link href="{{asset('/img/favicon.png')}}" rel="icon">
-        <link href="{{asset('/img/apple-touch-icon.png')}}" rel="apple-touch-icon">
+        <link href="{{asset('img/favicon.png')}}" rel="icon">
+        <link href="{{asset('img/apple-touch-icon.png')}}" rel="apple-touch-icon">
       
         <!-- Bootstrap core CSS -->
-        <link href="{{asset('vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+        {{-- <link href="{{asset('vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet"> --}}
       
         <!-- Google Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -53,8 +53,6 @@
   <script src="{{asset('vendor/owl.carousel/owl.carousel.min.js')}}"></script>
 
   <!-- Template Main JS File -->
-    <script src="{{('asset/js/main.js')}}"></script>
-    <script src="{{asset('vendor/jquery/jquery.min.js')}}"></script>
-    <script src="{{asset('vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+    <script src="{{asset('js/main.js')}}"></script>
 </body>
 </html>

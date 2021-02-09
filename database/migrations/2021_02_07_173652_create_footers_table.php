@@ -16,15 +16,10 @@ class CreateFootersTable extends Migration
         Schema::create('footers', function (Blueprint $table) {
             $table->id();
             $table->string("copyright", 15);
-            $table->string("resi", 10);
+            $table->string("brand", 10);
             $table->string("rights", 24);
             $table->string("designed", 15);
-            $table->string("company", 20);
-            $table->string("icone1", 20);
-            $table->string("icone2", 20);
-            $table->string("icone3", 20);
-            $table->string("icone4", 20);
-            $table->string("icone5", 20);
+            $table->string("team", 20);
             $table->timestamps();
         });
     }

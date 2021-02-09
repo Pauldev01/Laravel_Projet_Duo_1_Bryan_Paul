@@ -1,4 +1,4 @@
-@extends('template.main');
+@extends('template.main')
 
 @section('content')
 
@@ -6,42 +6,37 @@
         <section id="contact" class="contact section-bg">
             <div class="container">
               @foreach ($contactDB as $element)
-                  
+              @foreach ($informationsDB as $item)
               <div class="section-title">
                 <h2>{{$element->title}}</h2>
                 <p>{{$element->paragraph}}</p>
               </div>
-      
               <div class="row">
-      
                 <div class="col-lg-6">
-      
                   <div class="row">
                     <div class="col-md-12">
                       <div class="info-box">
                         <i class="{{$element->iconeAddress}}"></i>
                         <h3>{{$element->titleAddress}}</h3>
-                        <p>{{$element->address}}</p>
+                        <p>{{$item->address}}</p>
                       </div>
                     </div>
                     <div class="col-md-6">
                       <div class="info-box mt-4">
                         <i class="{{$element->iconeMail}}"></i>
                         <h3>{{$element->titleMail}}</h3>
-                        <p>{{$element->mail1}}<br>{{$element->mail2}}</p>
+                        <p>{{$item->mail1}}<br>{{$item->mail2}}</p>
                       </div>
                     </div>
                     <div class="col-md-6">
                       <div class="info-box mt-4">
                         <i class="{{$element->iconePhone}}"></i>
                         <h3>{{$element->titlePhone}}</h3>
-                        <p>{{$element->number1}}<br>{{$element->number2}}</p>
+                        <p>{{$item->number1}}<br>{{$item->number2}}</p>
                       </div>
                     </div>
                   </div>
-      
                 </div>
-      
                 <div class="col-lg-6 mt-4 mt-lg-0">
                   <form action="forms/contact.php" method="post" role="form" class="php-email-form">
                     <div class="form-row">
@@ -70,9 +65,8 @@
                     <div class="text-center"><button type="submit">{{$element->btnContact}}</button></div>
                   </form>
                 </div>
-      
               </div>
-
+              @endforeach
               @endforeach
             </div>
           </section><!-- End Contact Section -->
