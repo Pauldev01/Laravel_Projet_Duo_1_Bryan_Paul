@@ -3,18 +3,26 @@
 @section('content')
 <table class="table table-bordered table-dark container mt-5">
     <thead>
-      <tr>
+      {{-- <tr>
         <th scope="col">First</th>
         <th scope="col">Last</th>
         <th scope="col">Handle</th>
-      </tr>
+      </tr> --}}
     </thead>
     <tbody>
       <tr>
-        <th scope="row">1</th>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>@mdo</td>
+        @foreach ($homeContent as $item)
+        <td>{{$item ->iconvalidate}}</td>
+        <td>{{$item ->texticon1}}</td>
+        <td>{{$item ->texticon2}}</td>
+        <td>{{$item ->texticon3}}</td>
+        <td>{{$item ->iconvalidate2}}</td>
+        <td>{{$item ->texticon4}}</td>
+        <td>{{$item ->texticon5}}</td>
+        <td>{{$item ->texticon6}}</td>
+            
+        
+        @endforeach
       </tr>
     </tbody>
   </table>

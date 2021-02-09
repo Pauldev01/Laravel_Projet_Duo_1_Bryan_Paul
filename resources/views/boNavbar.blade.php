@@ -3,18 +3,21 @@
 @section('content')
 <table class="table table-bordered table-dark container mt-5">
     <thead>
-      <tr>
+      {{-- <tr>
         <th scope="col">First</th>
         <th scope="col">Last</th>
         <th scope="col">Handle</th>
-      </tr>
+      </tr> --}}
     </thead>
     <tbody>
       <tr>
-        <th scope="row">1</th>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>@mdo</td>
+        @foreach ($navbar as $item)
+        <td>{{$item ->title}}</td>
+        <td>{{$item ->home}}</td>
+        <td>{{$item ->article}}</td>
+        <td>{{$item ->contact}}</td>            
+        
+        @endforeach
       </tr>
     </tbody>
   </table>

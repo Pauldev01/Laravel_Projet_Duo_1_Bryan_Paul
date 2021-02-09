@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 // use App\Models\Navbar;
 
 use App\Models\Footer;
+use App\Models\Home;
+use App\Models\HomeContent;
 use App\Models\Navbar;
 use App\Models\Network;
 use Illuminate\Http\Request;
@@ -21,6 +23,18 @@ class WelcomeController extends Controller
     public function boFooter(){
         $footer = Footer::all();
         return view("boFooter", compact("footer"));
+    }
+    public function boHomeContent(){
+        $homeContent = HomeContent::all();
+        return view("boHomeContent", compact("homeContent"));
+    }
+    public function boHome(){
+        $home = Home::all();
+        return view("boHome", compact("home"));
+    }
+    public function boNavbar(){
+        $navbar = Navbar::all();
+        return view("boNavbar", compact("navbar"));
     }
 
     public function boNetwork(){

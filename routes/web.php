@@ -38,3 +38,8 @@ Route::post("/information-store", [ContactController::class, "add"]);
 
 Route::post("/footer-store", [WelcomeController::class, "store"]);
 Route::post("/network-store", [WelcomeController::class, "add"]);
+
+Route::get("/boArticle", [ArticleController::class, "boArticle"]);
+Route::get("/boHomeContent", [WelcomeController::class, "boHomeContent"]);
+Route::get("/boHome", [WelcomeController::class, "boHome"]);
+Route::get("/boNavbar", [WelcomeController::class, "boNavbar"]);

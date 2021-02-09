@@ -20,7 +20,7 @@
                   <a class="nav-link" href="/backoffice">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/article">Article</a>
+                  <a class="nav-link" href="/boArticle">Article</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="/boContact">Contact</a>
@@ -33,6 +33,18 @@
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="/boNetworks">Social Networks</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="/boNavbar">Navbar</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="/boHomeContent">HomeContent</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="/boHome">Home</a>
                 </li>
               </ul>
             </div>
